@@ -4,8 +4,7 @@ import Home from "./pages/Home.js";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import NotFound from "./pages/NotFound";
-/* Pour la navigation dans l’application layout dans lequel 
-on met le reste de l’application via props.children. */
+
 
 function App() {
     return (
