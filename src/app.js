@@ -10,7 +10,6 @@ function App() {
     return (
         <>
             <Routes>
-
                     {/* Page par default */}
                     <Route index element={<Home />} />
                     {/* Routage Page */}
