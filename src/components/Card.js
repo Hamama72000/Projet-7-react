@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Card from "../styles/card.css";
+import "../styles/card.css";
 
-const CardL = ({property}) => {
+const Card = ({property}) => {
     return (
         <div className="card_container">
           <Link to={`/logement/${property.id}`}>
@@ -16,4 +16,4 @@ const CardL = ({property}) => {
       );
 };
 
-export default CardL;
+export default Card;

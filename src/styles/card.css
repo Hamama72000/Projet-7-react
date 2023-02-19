@@ -3,7 +3,6 @@
   width: 335px;
   height: 255px;
   border-radius: 10px;
-  transition: 0.2s all ease-in-out;
 }
 
 .card_container a hover {

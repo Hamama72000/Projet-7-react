@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 10px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -8,22 +13,21 @@ header {
     height: 55px;
   }
 
-  @media screen and (min-width: 900px) { 
+  @media screen and (min-width: 900px) {
     height: 70px;
   }
 }
 
-
- img {
+/*Logo Kasa*/
+img {
   height: 100%;
 }
 
 nav {
-  display: flex;
   align-items: center;
   margin-left: auto;
   height: 100%;
-  width: 140px;
+  width: 350px;
   font-size: 12px;
   text-transform: uppercase;
   @media screen and (min-width: 400px) {
@@ -46,33 +50,37 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 17px; 
-  font-size: 19px;
+  height: 17px;
+  font-size: 22px;
   text-transform: capitalize;
-  display: inline;
 }
 
 li {
-  width: 50%;
-  text-align: right;
+  width: 35%;
   list-style-type: none;
-  display: inline;
 }
 
+
 a {
-    text-decoration: none;
-    color: red;
-    font-family: 'Roboto, sans-serif';
+  text-decoration: none;
+  color: red;
+  font-family: "Roboto, sans-serif";
 }
+
 
 .active {
   position: relative;
   content: "";
-  height: 1px;
+  height: 1px; /*position du menu par rapport au logo*/
   width: 0;
-  background: color-1;
-  border-radius: 10px;
-  bottom: -1px;
-  left: 50%;
+  left: 80%;/*accueil à droite*/
 }
 
+/*Menu est souligné quand on est sur la page d'accueil ou a propos*/
+.active:hover {
+  border-bottom: 2px solid red;
+}
+
+.about_navbar:hover {
+  border-bottom: 2px solid red;
+}
