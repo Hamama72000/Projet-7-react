@@ -17,3 +17,4 @@ const Card = ({property}) => {
 };
 
 export default Card;
+

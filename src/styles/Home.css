@@ -28,6 +28,5 @@
     gap: clamp(20px, 5vw, 60px);
     @media screen and (min-width: 900px) {
         margin-top: 43px;
-        background: $grey;
     }
 }
