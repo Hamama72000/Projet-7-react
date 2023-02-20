@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #f7f7f7;
-  padding: 60px;
+  padding: 30px;
   margin-top: 90px;
   border-radius: 25px;
   width: 100%;
@@ -49,9 +49,9 @@
 h3 {
   position: absolute;
   left: 20px;
-  bottom: 15px;
+  bottom: -120px;
   color: white;
   font-size: 18px;
-  font-weight: 500;
-  margin-right: 20px;
+  font-weight: bolder;
+  margin-left: 35px;
 }
