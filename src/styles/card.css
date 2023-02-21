@@ -1,6 +1,5 @@
 .card_container {
   display: flex;
-  display: inline-block;
   flex-direction: column;
   position: relative;
   width: 335px;
@@ -8,11 +7,14 @@
   border-radius: 10px;
 }
 
-.card_container a hover {
-  box-shadow: shadowCard;
+/*Rendu dynamique au survol des cartes*/
+.card_container:hover {
   transform: scale(1.05);
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 10px 20px 5px rgba(158, 16, 16, 0.5);
 }
 
+/*grand Bloc gris carte aves toutes les images*/
 .display_card {
   display: flex;
   flex-wrap: wrap;
@@ -25,31 +27,22 @@
 }
 
 .img_container {
-  height: 100%;
+  height: 100%; 
+  width: 100%; 
   border-radius: 10px;
 }
 
 .img_container img {
-  height: 350px;
-  width: 450px;
+  height: 100%;/* dimensions des images*/
+  width: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
 
-/* .card_mask {
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-} */
-
 h3 {
   position: absolute;
   left: 20px;
-  bottom: -120px;
+  bottom: -15px;
   color: white;
   font-size: 18px;
   font-weight: bolder;
