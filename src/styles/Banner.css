@@ -1,7 +1,13 @@
+/* *{
+  box-sizing: border-box;
+} */
+
+
 .banner_container {
   position: relative;
   width: 100%;
   height: 111px;
+  margin: 30px;
   }
 
   @media screen and (min-width: 900px) {

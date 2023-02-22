@@ -3,6 +3,7 @@ import Banner from "../components/Banner.js";
 import BGHome from "../assets/home_bg_banner.png";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 import Properties from "../data/logements";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           <Card key={logement.id} property={logement} />
         ))}
       </div>
+      <Footer />
     </main>
   );
 }
