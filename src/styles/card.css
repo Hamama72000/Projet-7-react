@@ -1,10 +1,13 @@
+/*cates images*/
 .card_container {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 335px;
+  width: 374px;
   height: 255px;
   border-radius: 10px;
+  margin: 30px;
+  margin-top: 50px;
 }
 
 /*Rendu dynamique au survol des cartes*/
@@ -18,13 +21,12 @@
 .display_card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #f7f7f7;
-  padding: 30px;
-  margin-top: 90px;
   border-radius: 25px;
   width: 100%;
-  gap: 10rem;
   margin: 30px;
+  margin-top: 70px;
 }
 
 .img_container {
@@ -42,10 +44,10 @@
 
 h3 {
   position: absolute;
-  left: 20px;
-  bottom: -15px;
+  left: 25px;
+  bottom: 5px;
   color: white;
   font-size: 18px;
   font-weight: bolder;
-  margin-left: 35px;
+  margin-right: 75px;
 }
