@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Logement from "./pages/Logement";
 import NotFound from "./pages/NotFound";
 
-
 function App() {
     return (
         <>
@@ -21,6 +20,7 @@ function App() {
                     <Route path="/404" element={<NotFound />} />
            
             </Routes>
+
         </>
     );
 }
