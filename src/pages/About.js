@@ -3,8 +3,7 @@ import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import Data from "../data/about";
 import BGBanner from "../assets/about_bg_banner.png";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 
 
@@ -14,7 +13,6 @@ export default function About() {
     return (
         
         <main className="display_about">
-             <Navbar />
              <Banner img={BGBanner} />
             <div className="display_collapses">
                 {Data.map((props, index) => (
@@ -27,7 +25,6 @@ export default function About() {
                     </div>
                 ))}
             </div>
-        <Footer/>
         </main>
     );
 }

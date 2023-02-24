@@ -4,10 +4,13 @@ import Home from "./pages/Home.js";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
     return (
         <>
+        <Navbar />
             <Routes>
                     {/* Page par default */}
                     <Route index element={<Home />} />
@@ -20,7 +23,7 @@ function App() {
                     <Route path="/404" element={<NotFound />} />
            
             </Routes>
-
+        <Footer />
         </>
     );
 }
