@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 .display_collapses {
   margin-bottom: 330px;
 }
@@ -92,6 +95,7 @@
 
 .collapse_toggle p {
   display: flex;
+  text-align: left;
   padding: 22px 15px;
   margin: 0;
   pointer-events: none;
