@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .display_collapses {
   margin-bottom: 330px;
@@ -38,7 +37,6 @@
   font-size: 24px;
   line-height: 34px;
   bottom: auto;
-  /* margin: 60px; */
   @media screen and (min-width: 900px) {
     font-size: 24px;
     line-height: 34px;
@@ -66,7 +64,6 @@
 .collapse_toggle {
   font-size: 24px;
   align-items: center;
-  align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
 }
@@ -87,7 +84,7 @@
 .animated {
   display: flex;
   justify-content: center;
-  min-height: 120px;
+  min-height: 140px;
   background-color: #f6f6f6;
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
@@ -101,7 +98,7 @@
   pointer-events: none;
   font-weight: 400;
   font-size: 24px;
-  line-height: 17px;
+  line-height: 35px;
   color: #ff6060;
   @media screen and (min-width: 900px) {
     padding: 22px 30px;
