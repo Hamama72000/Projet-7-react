@@ -1,38 +1,39 @@
+/*Bloc 404 +  phrase OUPS */
 .not_found_main {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
-  margin: 277px auto;
 }
 
+/*404*/
 .not_found_main h1 {
   display: flex;
   justify-content: center;
   font-weight: 700;
   color: #ff6060;
-  font-size: 96px;
-  line-height: 142.6%;
-
+  font-size: 288px;
+  line-height: 0%;
   @media screen and (min-width: 900px) {
     font-size: 288px;
   }
 }
 
+/*Phrase OUPS parametres*/
 .not_found_main h2 {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: #ff6060;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 142.6%;
+  font-size: 36px;
   @media screen and (min-width: 900px) {
     font-size: 36px;
   }
 }
 
+/*Phrase  OUPS version ordi*/
 .NotFound_desktop {
   display: none;
   @media screen and (min-width: 600px) {
@@ -40,6 +41,7 @@
   }
 }
 
+/*Phrase  OUPS version mobile*/
 .NotFound_mobile {
   display: block;
   @media screen and (min-width: 600px) {
@@ -47,9 +49,11 @@
   }
 }
 
+/*Lien retrouner à la page d'accueil*/
 .back_link {
   font-weight: 500;
-  font-size: 14px;
+  line-height: 220px;
+  font-size: 18px;
   @media screen and (min-width: 500px) {
     font-size: 18px;
   }

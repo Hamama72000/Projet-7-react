@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/collapse.css";
 
+
 export default function Collapse({ props, title }) {
     const ChevronDown = <i className="fa-solid fa-chevron-down"></i>;
     const ChevronUp = <i className="fa-solid fa-chevron-up"> </i>;
