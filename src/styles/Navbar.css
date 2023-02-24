@@ -1,9 +1,9 @@
 header {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 95%;
   height: 47px;
-  margin: 30px;
+  margin: 50px;
 
   @media screen and (min-width: 500px) {
     height: 55px;
@@ -20,7 +20,7 @@ img {
 }
 
 nav {
-  align-items: center;
+  /* align-items: center; */
   margin-left: auto;
   height: 100%;
   width: 350px;
@@ -44,7 +44,6 @@ nav {
 ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: 17px;
   font-size: 22px;
@@ -56,20 +55,17 @@ li {
   list-style-type: none;
 }
 
-
 a {
   text-decoration: none;
   color: red;
   font-family: "Roboto, sans-serif";
 }
 
-
 .active {
-  position: relative;
   content: "";
   height: 1px; /*position du menu par rapport au logo*/
   width: 0;
-  left: 80%;/*accueil à droite*/
+  /* left: 90%; accueil à droite */
 }
 
 /*Menu est souligné quand on est sur la page d'accueil ou a propos*/

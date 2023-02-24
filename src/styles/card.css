@@ -1,3 +1,5 @@
+
+
 /*cates images*/
 .card_container {
   display: flex;
@@ -6,8 +8,8 @@
   width: 374px;
   height: 255px;
   border-radius: 10px;
-  margin: 30px;
-  margin-top: 50px;
+  margin: 40px;
+  margin-top: 90px;
 }
 
 /*Rendu dynamique au survol des cartes*/
@@ -24,8 +26,8 @@
   justify-content: space-around;
   background-color: #f7f7f7;
   border-radius: 25px;
-  width: 100%;
-  margin: 30px;
+  width: 85%; /*dimensions taille carte largeur */
+  margin: 100px;
   margin-top: 70px;
 }
 

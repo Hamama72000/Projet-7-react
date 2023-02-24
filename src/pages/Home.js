@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Properties from "../data/logements";
+import "../styles/Home.css";
+
 
 export default function Home() {
   document.title = "Kasa - Accueil";
