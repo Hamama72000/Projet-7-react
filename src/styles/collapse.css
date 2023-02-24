@@ -62,6 +62,8 @@
 
 .collapse_toggle {
   font-size: 24px;
+  align-items: center;
+  align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
 }
@@ -80,6 +82,9 @@
 }
 
 .animated {
+  display: flex;
+  justify-content: center;
+  min-height: 120px;
   background-color: #f6f6f6;
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
