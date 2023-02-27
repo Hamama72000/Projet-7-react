@@ -1,12 +1,9 @@
 .banner_container {
   position: relative;
-  left: 110px;
-  /* right: 100px; */
-  width: 1420px;
   height: 223px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   .banner_container {
     height: 223px;
   }

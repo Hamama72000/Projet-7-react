@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-
 .display_collapses {
   width: 65%;
   margin-bottom: 30px;
@@ -36,7 +33,6 @@
 
 
 .collapse_visible h3 {
-  font-family: monsterat, sans serif;
   color: white;
   font-weight: 500;
   font-size: 24px;

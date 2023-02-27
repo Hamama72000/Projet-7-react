@@ -1,19 +1,13 @@
-body {
-  margin: 0;
-}
-
 header {
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 100%;
   height: 47px;
   margin: 50px;
-
-  @media screen and (min-width: 500px) {
+  @media screen and (max-width: 500px) {
     height: 55px;
   }
-
-  @media screen and (min-width: 900px) {
+  @media screen and (max-width: 900px) {
     height: 70px;
   }
 }
@@ -24,7 +18,7 @@ img {
 }
 
 nav {
-  /* align-items: center; */
+  align-items: center; 
   margin-left: auto;
   height: 100%;
   width: 350px;
@@ -63,20 +57,12 @@ a {
   height: 100%;
   text-decoration: none;
   color: red;
-  font-family: "Roboto, sans-serif";
 }
 
+/* Menu est souligné quand on est sur la page d'accueil ou a propos*/
 .active {
+  border-bottom: 2px solid red;
   content: "";
   height: 1px; /*position du menu par rapport au logo*/
   width: 0;
-}
-
-/*Menu est souligné quand on est sur la page d'accueil ou a propos*/
-.active:hover {
-  border-bottom: 2px solid red;
-}
-
-.about_navbar:hover {
-  border-bottom: 2px solid red;
 }
