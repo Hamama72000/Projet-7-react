@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
 .display_collapses {
-  margin-bottom: 330px;
+  width: 65%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 271px;
 }
 
 .collapse {
   width: 100%;
   height: auto;
   background: #ff6060;
-  border-radius: 5px;
+  border-radius: 15px;
   @media screen and (min-width: 900px) {
     max-width: 1023px;
     border-radius: 10px;
@@ -30,6 +34,7 @@
   }
 }
 
+
 .collapse_visible h3 {
   font-family: monsterat, sans serif;
   color: white;
@@ -37,6 +42,7 @@
   font-size: 24px;
   line-height: 34px;
   bottom: auto;
+  left: unset;
   @media screen and (min-width: 900px) {
     font-size: 24px;
     line-height: 34px;
@@ -44,16 +50,13 @@
 }
 
 .collapse_icon i {
-  width: 14.06px;
-  height: 23.86px;
-  top: 21.89px;
-  left: 2.53px;
-  /* position: absolute; */
-  left: 8.75%;
-  right: 42.63%;
-  top: 75.67%;
-  bottom: -58.17%;
-  background: #ffffff;
+  height: 200px;
+  width: 14px;
+  left: 2px;
+  top: 21px;
+  border-radius: 5px;
+  
+  background-color: #f6f6f6;
   transform: rotate(-90deg);
 
   @media screen and (min-width: 900px) {
@@ -84,11 +87,11 @@
 .animated {
   display: flex;
   justify-content: center;
-  min-height: 140px;
   background-color: #f6f6f6;
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
 }
+
 
 .collapse_toggle p {
   display: flex;

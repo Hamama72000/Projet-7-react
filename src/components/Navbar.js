@@ -12,8 +12,7 @@ export default function navbar() {
                 <ul>
                     <li>
                         <NavLink
-                            to="/"
-                            end
+                            to="home" 
                             className={({ isActive }) => //sert à souligner le texte si je suis sur la page d'accueil
                                 isActive
                                     ? "accueil_navbar active"
@@ -25,7 +24,7 @@ export default function navbar() {
                     </li>
                     <li>
                         <NavLink
-                            to="/about"
+                            to="about"
                             className={({ isActive }) =>
                                 isActive
                                     ? "about_navbar active"

@@ -1,13 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/collapse.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Collapse({ props, title }) {
-    const ChevronDown = <i className="fa-solid fa-chevron-down"></i>;
-    const ChevronUp = <i className="fa-solid fa-chevron-up"> </i>;
+    const ChevronDown = <FontAwesomeIcon icon={faChevronDown}/>;
+    const ChevronUp = <FontAwesomeIcon icon={faChevronUp}/>;
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
 
+    console.log('test', ChevronUp)
     const toggleState = () => {
         setToggle(!toggle);
     };
