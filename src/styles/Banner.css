@@ -5,7 +5,8 @@
 
 @media screen and (max-width: 900px) {
   .banner_container {
-    height: 223px;
+    height: 111px;
+    margin-bottom: 60px;
   }
 }
 
@@ -16,6 +17,11 @@
   height: 100%;
   z-index: -1;
   border-radius: 25px;
+}
+@media screen and (max-width: 900px) {
+  .imgBG {
+    border-radius: 13px;
+  }
 }
 
 .maskBG {
@@ -42,4 +48,10 @@ p {
   font-weight: 500;
   font-size: 48px;
   text-align: center;
+}
+@media screen and (max-width: 900px) {
+  p {
+   font-size: 24px;
+   text-align: left;
+  }
 }

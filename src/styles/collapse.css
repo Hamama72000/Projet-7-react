@@ -1,16 +1,17 @@
 .display_collapses {
-  width: 65%;
   margin-bottom: 30px;
   margin-top: 30px;
-  margin-left: 271px;
 }
 
 .collapse {
-  width: 100%;
-  height: auto;
+  margin-left: 100px; 
+  margin-right: 100px;
   background: #ff6060;
   border-radius: 15px;
-  @media screen and (min-width: 900px) {
+}
+  @media screen and (max-width: 900px) {
+  .collapse { 
+    margin :unset ;
     max-width: 1023px;
     border-radius: 10px;
   }
@@ -45,19 +46,9 @@
   }
 }
 
-.collapse_icon i {
-  height: 200px;
-  width: 14px;
-  left: 2px;
-  top: 21px;
-  border-radius: 5px;
-  
-  background-color: #f6f6f6;
-  transform: rotate(-90deg);
-
-  @media screen and (min-width: 900px) {
-    font-size: 24px;
-  }
+.svg-inline--fa {
+height: 1.5em;
+color:white;
 }
 
 .collapse_toggle {
