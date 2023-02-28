@@ -46,9 +46,12 @@
   }
 }
 
-.svg-inline--fa {
-height: 1.5em;
-color:white;
+.collapse_icon {
+  margin-left: auto;
+  font-size: 24px;
+  margin-right: 24px; 
+  height: 1.5em;
+  color:white;
 }
 
 .collapse_toggle {
