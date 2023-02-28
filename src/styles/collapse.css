@@ -46,11 +46,12 @@
   }
 }
 
+/*Pour chevron à droite*/
 .collapse_icon {
   margin-left: auto;
+  margin-top: 25px;
   font-size: 24px;
   margin-right: 24px; 
-  height: 1.5em;
   color:white;
 }
 
