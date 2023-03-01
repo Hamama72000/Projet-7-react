@@ -40,6 +40,9 @@
    
    
   @media screen and (max-width: 900px) {
+  .not_found_main {
+  margin-top: 200px;
+  }
   .NotFound_mobile {
   display: block;
   font-size: 18px;
@@ -52,10 +55,7 @@
   font-size: 96px;
   }
   }
-   
-   
-   
-   
+    
    
   /*Lien retrouner à la page d'accueil*/
   .back_link {

@@ -14,14 +14,14 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-right: 20px;
-  height: 25px;
+  height: 28px;
   background: #ff6060;
   border-radius: 10px;
   font-style: normal;
   color: white;
   font-weight: 500;
   font-size: 14px;
-  line-height: 142.6%;
+  line-height: 222.6%;
   text-align: center;
 }
 
@@ -42,6 +42,12 @@
   line-height: 142.6%;
   color: #ff6060;
   margin-top: 0;
+}
+
+.property_description_header {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 15px;
 }
 
 .property_header {
@@ -87,14 +93,94 @@
   display: inline-block;
 }
 
+/*Marges des blocs description et equipements*/
+.collapse {
+  margin: auto;
+  width: 100%;
+}
+
+.property_description .collapse_visible h3 {
+  line-height: 4px;
+}
+
+.property_description .collapse_icon {
+  margin-top: 17px;
+}
 
 .property_description {
   display: flex;
   margin-top: 30px;
   margin-bottom: 3%;
+  gap: 5rem;
 }
 
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-fraction {
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+}
 
-.right {
-  margin-left: auto;
+/* Responsive Tablette */
+@media all and (max-width: 992px) {
+  .slider_image {
+    width: 335px;
+    height: 255px;
+  }
+  .slider {
+    height: unset;
+  }
+  .property_title {
+    font-size: 18px;
+  }
+  .property_header {
+    display: block;
+  }
+  .property_description {
+    display: unset;
+  }
+  .property_description_header {
+    font-size: 14px;/*sous titre en dessous de limage*/
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .tags {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 10px;
+  }
+  .property_description .collapse_visible h3 {
+    font-size: 13px;
+    line-height: 35px;
+    left: 35px;
+  }
+  .property_description .collapse_toggle p {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+  }
+  .property_description .collapse_visible {
+    height: 29px;
+    width: 300px;
+  }
+  .property_description .collapse_icon {
+    font-size: 14px;
+  }
+  .property_description .collapse_toggle ul {
+    display: flex;
+    flex-direction: column;
+    color: #ff6060;
+    text-align: left;
+    margin-left: -15px;
+  }
+  
+  .property_description .animated {
+    display: block;
+    height: unset;
+  }
+
+  .property_header p {
+    margin: unset;
+  }
 }

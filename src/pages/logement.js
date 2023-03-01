@@ -61,7 +61,7 @@ export default function Logement() {
 
       <div className="property_description">
       <Collapse  props={property.description} title="Description" />
-      <Collapse  props={property.equipments} title="Equipement" />
+      <Collapse  props={property.equipments} title="Equipements" />
       </div>
     </div>
   );
