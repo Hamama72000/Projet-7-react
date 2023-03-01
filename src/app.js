@@ -11,18 +11,20 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        {/* Page par default */}
-        <Route index element={<Home />} />
-        {/* Routage Page */}
-        <Route path="/home" element={<Home />} />
-        <Route path={`/logement/:id`} element={<Logement />} />
-        <Route path="/about" element={<About />} />
-        {/* Erreur URL */}
-        <Route path="*" element={<NotFound />} />
-        <Route path="/404" element={<NotFound />} />
-      </Routes>
+      <div class="main">
+        <Navbar />
+        <Routes>
+          {/* Page par default */}
+          <Route index element={<Home />} />
+          {/* Routage Page */}
+          <Route path="/home" element={<Home />} />
+          <Route path={`/logement/:id`} element={<Logement />} />
+          <Route path="/about" element={<About />} />
+          {/* Erreur URL */}
+          <Route path="*" element={<NotFound />} />
+          <Route path="/404" element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   );

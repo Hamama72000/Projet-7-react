@@ -47,7 +47,6 @@
 .property_description_header {
   text-align: left;
   margin-bottom: 2rem;
-  margin-left: 15px;
 }
 
 .property_header {
@@ -94,9 +93,12 @@
 }
 
 /*Marges des blocs description et equipements*/
-.collapse {
+.collapse p ul li {
   margin: auto;
-  width: 100%;
+}
+
+.collapse{
+  width:100%;
 }
 
 .property_description .collapse_visible h3 {
@@ -123,7 +125,7 @@
 }
 
 /* Responsive Tablette */
-@media all and (max-width: 992px) {
+@media all and (max-width: 400px) {
   .slider_image {
     width: 335px;
     height: 255px;

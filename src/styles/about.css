@@ -8,6 +8,11 @@
 .banner_container {
   height: 225px;
 }
+*
+.display_collapses {
+  margin-left: 100px; 
+  margin-right: 100px;
+}
 
 .imgBG {
   object-fit: cover;
