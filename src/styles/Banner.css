@@ -38,7 +38,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 16px;
 }
 
 p {
@@ -55,3 +54,24 @@ p {
    text-align: left;
   }
 }
+
+
+  /*Phrase OUPS version mobile*/
+  .banner_text_mobile {
+    display: none;
+    }
+    /*Phrase OUPS version ordi*/
+    .banner_text_desktop {
+    display: flex;
+    }
+     
+     
+    @media screen and (max-width: 900px) {
+
+    .banner_text_mobile {
+    display: flex;
+    }
+    .banner_text_desktop {
+    display: none;
+    }
+    }

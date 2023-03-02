@@ -15,8 +15,9 @@ nav {
   width: 100%;
 }
 
-ul {
+header ul {
   text-align: right;
+  padding-inline-start: unset;
 }
 
 li {
@@ -58,7 +59,7 @@ a {
 }
 
 /* Responsive Petits écrans */
-@media all and (max-width: 300px) {
+@media all and (max-width: 600px) {
   header {
     height: 25px;
   }

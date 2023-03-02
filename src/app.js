@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div class="main">
         <Navbar />
         <Routes>
           {/* Page par default */}
@@ -24,7 +23,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/404" element={<NotFound />} />
         </Routes>
-      </div>
       <Footer />
     </>
   );
