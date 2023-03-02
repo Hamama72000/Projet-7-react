@@ -8,11 +8,6 @@
 .banner_container {
   height: 225px;
 }
-*
-.display_collapses {
-  margin-left: 100px; 
-  margin-right: 100px;
-}
 
 .imgBG {
   object-fit: cover;
@@ -22,16 +17,8 @@
   }
 }
 
-.display_collapses {
-  margin: 19px 0;
-  @media screen and (min-width: 900px) {
-    margin: 31px 0;
-  }
+@media screen and (max-width: 900px) {
+.display_about {
+height: unset;
 }
-
-.collapses {
-  margin-bottom: 20px;
-  @media screen and (min-width: 900px) {
-    margin-bottom: 33px;
-  }
 }

@@ -11,7 +11,11 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-        <Navbar />
+      <div style={{
+        margin: "auto",
+        width: "80%"
+      }}>
+      <Navbar />
         <Routes>
           {/* Page par default */}
           <Route index element={<Home />} />
@@ -23,6 +27,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/404" element={<NotFound />} />
         </Routes>
+      </div>
+        
       <Footer />
     </>
   );

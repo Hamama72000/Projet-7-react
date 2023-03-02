@@ -31,8 +31,7 @@
   font-size: 36px;
   line-height: 142.6%;
   color: #ff6060;
-  margin-bottom: 0;
-  margin-top: 0;
+  text-align: left;
 }
 
 .property_description_header {
@@ -44,9 +43,25 @@
   margin-top: 0;
 }
 
+.property_description .collapse_visible {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 0px;
+  border-radius: 15px;
+  transform: translateY(10px);
+}
 .property_description_header {
   text-align: left;
   margin-bottom: 2rem;
+}
+.collapse {
+  background: none;
+  border-radius: 15px;
+}
+
+.collapse_visible {
+  margin: 0;
 }
 
 .property_header {
@@ -56,10 +71,13 @@
 }
 
 .host_name p {
-  text-align: right;
+  color: #ff6060;
+  font-size: 18px;
   margin-right: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: right;
 }
 
 .host_name {
@@ -70,13 +88,12 @@
 .property_host_and_rate {
   display: grid;
   margin-left: auto;
-  
 }
 
 .property_host_and_rate div {
   margin-left: auto;
   height: 50%;
-  display:inline-block;
+  display: inline-block;
 }
 
 .host_picture {
@@ -98,16 +115,17 @@
   margin: auto;
 }
 
-.collapse{
-  width:100%;
+.collapse {
+  width: 100%;
 }
 
 .property_description .collapse_visible h3 {
   line-height: 4px;
+  font-size: 18px;
 }
 
 .property_description .collapse_icon {
-  margin-top: 17px;
+  margin-top: 7px;
 }
 
 .property_description {
@@ -116,10 +134,25 @@
   margin-bottom: 3%;
   gap: 5rem;
 }
-/* .collapse_toggle ul {
-  color : #ff6060;
-  font-size: 24px;
-} */
+
+.property_description .collapse_toggle p {
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.property_description .animated {
+  display: block;
+  /* height: unset; */
+}
+/*texte liste dans equipenemnt*/
+.property_description .collapse_toggle ul {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+  font-size: 18px;
+  line-height: 25px;
+}
 
 .swiper-button-next,
 .swiper-button-prev,
@@ -129,8 +162,15 @@
   font-size: 18px;
 }
 
-/* Responsive Tablette */
-@media all and (max-width: 400px) {
+/* Responsive tab */
+@media all and (max-width: 992px) {
+  .property_description .collapse {
+    height: unset;
+  }
+}
+
+/* Responsive petits ecrans */
+@media all and (max-width: 600px) {
   .slider_image {
     width: 100%;
     height: 255px;
@@ -138,6 +178,14 @@
   .slider {
     height: unset;
   }
+  .property_host_and_rate {
+    display: flex;
+    justify-content: none;
+    flex-direction: row-reverse;
+    gap: 4.7em;
+    margin-top: 20px;
+  }
+
   .property_title {
     font-size: 18px;
   }
@@ -148,9 +196,17 @@
     display: unset;
   }
   .property_description_header {
-    font-size: 14px;/*sous titre en dessous de limage*/
+    font-size: 14px; /*sous titre en dessous de limage*/
     margin-bottom: 0;
     margin-left: 0;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 18px;
+  }
+
+  .swiper-pagination-fraction {
+    display: none;
   }
   .tags {
     padding-left: 15px;
@@ -159,34 +215,43 @@
   }
   .property_description .collapse_visible h3 {
     font-size: 13px;
-    line-height: 35px;
+    line-height: 5px;
   }
   .property_description .collapse_toggle p {
     font-size: 12px;
     line-height: 17px;
     text-align: left;
+    margin-left: unset;
   }
   .property_description .collapse_visible {
     height: 29px;
-    width: 300px;
   }
   .property_description .collapse_icon {
     font-size: 14px;
   }
-  .property_description .collapse_toggle ul{
+  .property_description .collapse_toggle ul {
     display: flex;
     flex-direction: column;
     color: #ff6060;
     text-align: left;
     margin-left: -15px;
+    font-size: 12px;
+    line-height: 17px;
   }
-  
   .property_description .animated {
     display: block;
     height: unset;
   }
-
-  .property_header p {
-    margin: unset;
+  .host_name p {
+    font-size: 12px;
+  }
+  .star {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .host_picture {
+    width: 34px;
+    height: 34px;
   }
 }

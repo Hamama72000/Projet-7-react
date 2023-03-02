@@ -1,29 +1,35 @@
 .display_collapses {
   margin-bottom: 30px;
   margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .collapse {
   background: #ff6060;
   border-radius: 15px;
+  margin-bottom: 30px;
+  
 }
 
 .collapse_visible {
   background: #ff6060;
-  border-radius: 5px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  margin: 30px;
-  height: 47px;
-
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 0px;
+  border-radius: 15px;
+  transform: translateY(10px);
 }
 
 .collapse_visible h3 {
   color: white;
   font-weight: 500;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 4px;
   bottom: auto;
   left: unset;
 }
@@ -31,10 +37,10 @@
 /*Pour chevron à droite*/
 .collapse_icon {
   margin-left: auto;
-  margin-top: 25px;
+  margin-top: 10px;
   font-size: 24px;
-  margin-right: 24px; 
-  color:white;
+  margin-right: 24px;
+  color: white;
 }
 
 .collapse_toggle {
@@ -60,7 +66,6 @@
   transition: height 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
 }
 
-
 .collapse_toggle p {
   display: flex;
   text-align: left;
@@ -74,12 +79,32 @@
 }
 
 @media all and (max-width: 992px) {
-  .display_collapses {
-    margin-top: -30px;
-  }
-  .collapse { 
-    margin :unset ;
+  .collapse {
+    margin: unset;
     max-width: 1023px;
     border-radius: 10px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .display_collapses {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .collapse_toggle p {
+    font-size: 12px;
+    line-height: 17px;
+    height: unset;
+  }
+  .collapse_visible h3{
+    font-size: 13px;
+  }
+  .collapse {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .collapse_icon {
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
