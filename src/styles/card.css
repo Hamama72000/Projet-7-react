@@ -61,6 +61,9 @@ h3 {
     background-color: unset;
     margin-top: -60px;
   }
+  .card_container h3{
+    text-transform: capitalize;
+  }
 }
 
 /* Responsive Petits écrans */
