@@ -54,6 +54,8 @@ h3 {
   .card_container {
     margin: 0;
     margin-top: 20px;
+    width: unset;
+    height: unset;
   }
   .display_card {
     background-color: unset;
