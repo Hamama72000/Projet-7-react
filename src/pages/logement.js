@@ -10,6 +10,7 @@ import "../styles/App.css";
 import star_filled from "../assets/star-filled.svg";
 import star_empty from "../assets/star-empty.svg";
 import Collapse from "../components/Collapse";
+import { Navigate } from "react-router-dom";
 
 export default function Logement() {
   //get last part of url
@@ -17,6 +18,9 @@ export default function Logement() {
   //from propreties get the one with the same id
   const property = Properties.find((property) => property.id === id);
 
+  if (!property) {
+    return <Navigate replace to="/404" />
+  }
   return (
     <div>
       <Swiper
