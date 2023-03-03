@@ -170,6 +170,9 @@
   .property_header {
     display: unset;
   }
+  .tags {
+    margin-top: 10px;
+  }
 }
 
 /* Responsive petits ecrans */
@@ -201,7 +204,6 @@
   .property_description_header {
     font-size: 14px; /*sous titre en dessous de limage*/
     margin-bottom: 0;
-    margin-left: 0;
   }
   .swiper-button-next::after,
   .swiper-button-prev::after {
