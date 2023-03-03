@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/Banner.css";
 import maskBG from "../assets/maskBG.png";
 
-const Banner = ({ img }) => {
+const Banner = ({ img, className }) => {
   return (
-    <div className="banner_container">
+    <div className={`banner_container ${className}`}>
       <img src={img} alt="" className="imgBG" />
       <img src={maskBG} alt="filtre bannière" className="maskBG" />
       <div className="banner_text banner_text_desktop">

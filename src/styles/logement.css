@@ -91,6 +91,7 @@
 }
 
 .property_host_and_rate div {
+  margin-left: auto;
   height: 50%;
   display: inline-block;
 }
@@ -272,8 +273,8 @@
   .property_host_and_rate {
     gap: 6rem;
   }
-  .property_host_and_rate  {
-    flex: 1;
+  .property_rate {
+    width: 130px;
   }
 }
 @media all and (max-width: 290px) {

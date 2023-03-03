@@ -8,7 +8,7 @@ export default function About() {
   document.title = "Kasa - A propos de nous";
   return (
     <main className="display_about">
-      <Banner img={BGBanner} />
+      <Banner img={BGBanner} className="toto" />
       <div className="display_collapses">
         {Data.map((props, index) => (
           <div className="collapses" key={index}>
